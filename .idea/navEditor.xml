@@ -86,6 +86,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="settings_dest">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-202" />
+                            <option name="y" value="-23" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                 </map>
               </option>
             </LayoutPositions>
