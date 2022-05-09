@@ -22,7 +22,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import androidx.navigation.fragment.navArgs
 
 /**
  * Presents how multiple steps flow could be implemented.
@@ -36,11 +35,11 @@ class FlowStepFragment : Fragment() {
     ): View? {
         setHasOptionsMenu(true)
 
-        //val flowStepNumber = arguments?.getInt("flowStepNumber")
+        val flowStepNumber = arguments?.getInt("flowStepNumber")
 
         // TODO STEP 8 - Use type-safe arguments - remove previous line!
-        val safeArgs: FlowStepFragmentArgs by navArgs()
-        val flowStepNumber = safeArgs.flowStepNumber
+        //val safeArgs: FlowStepFragmentArgs by navArgs()
+        //val flowStepNumber = safeArgs.flowStepNumber
         // TODO END STEP 8
 
         return when (flowStepNumber) {
@@ -55,5 +54,5 @@ class FlowStepFragment : Fragment() {
         view.findViewById<View>(R.id.next_button).setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.next_action)
         )
-    }
-}
+}    }
+
