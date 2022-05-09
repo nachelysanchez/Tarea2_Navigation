@@ -39,8 +39,15 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        //SHOPPING CART
+
+
+
+
 
         //TODO STEP 5 - Set an OnClickListener, using Navigation.createNavigateOnClickListener()
+
+
         val button = view.findViewById<Button>(R.id.navigate_destination_button)
         button?.setOnClickListener {
             findNavController().navigate(R.id.flow_step_one_dest, null)
@@ -58,6 +65,9 @@ class HomeFragment : Fragment() {
         }
         view.findViewById<Button>(R.id.navigate_destination_button)?.setOnClickListener {
             findNavController().navigate(R.id.flow_step_one_dest, null, options)
+        }
+        view.findViewById<Button>(R.id.shopping_cart)?.setOnClickListener {
+            findNavController().navigate(R.id.shop_action, null, options)
         }
         //TODO END STEP
         //TODO STEP 7.2 - Update the OnClickListener to navigate using an action

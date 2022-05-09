@@ -31,13 +31,13 @@
             app:popExitAnim="@anim/slide_out_right" />
         <!-- TODO END STEP 7.1 -->
 
-        <!--<action
-            android:id="@+id/next_action"
-            app:destination="@id/flow_step_one_dest"
+        <action
+            android:id="@+id/shop_action"
+            app:destination="@id/shopping_Fragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" /> -->
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
@@ -105,4 +105,10 @@
         android:name="com.example.android.codelabs.navigation.SettingsFragment"
         android:label="settings_fragment"
         tools:layout="@layout/settings_fragment" />
+
+    <fragment
+        android:id="@+id/shopping_Fragment"
+        android:name="com.example.android.codelabs.navigation.ShopFragment"
+        android:label="shopping_fragment"
+        tools:layout="@layout/shopping_fragment"/>
 </navigation>

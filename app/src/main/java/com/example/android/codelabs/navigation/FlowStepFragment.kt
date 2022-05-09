@@ -23,6 +23,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
+import com.example.android.codelabs.navigation.R.id.shopping_cart
 
 /**
  * Presents how multiple steps flow could be implemented.
@@ -55,5 +56,9 @@ class FlowStepFragment : Fragment() {
         view.findViewById<View>(R.id.next_button).setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.next_action)
         )
+
+        //view.findViewById<View>(shopping_cart).setOnClickListener(
+            //Navigation.createNavigateOnClickListener(R.id.shop_action)
+        //)
 }    }
 

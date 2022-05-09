@@ -130,6 +130,8 @@ class MainActivity : AppCompatActivity() {
         // TODO END STEP 9.2
     }
 
+
+
     // TODO STEP 9.7 - Have NavigationUI handle up behavior in the ActionBar
     override fun onSupportNavigateUp(): Boolean {
 //        // Allows NavigationUI to support proper up navigation or the drawer layout
